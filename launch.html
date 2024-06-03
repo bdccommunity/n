@@ -3,15 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-}
-
-.intro {
-  font-size: 40px;
-}
 
 img {
   display: block;
@@ -22,43 +13,7 @@ img {
 </head>
 <body>
 
-<div id="dip2"><p class="intro">Launching in ...</p></div>
-<p id="demo"></p>
-
-<script>
-
-
-
-// Set the date we're counting down to
-var countDownDate = new Date("May 31, 2024 17:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
- 
- 
-   document.getElementById("demo").innerHTML = Math.floor(distance/1000);
-   
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "Happy Everyday !";
-	
-	document.getElementById('dip2').hidden = true;
-	document.getElementById("dip").setAttribute('src','launch4_c.gif');
-  }
-
-  
-}, 1000);
-</script>
-
-<img id="dip" src="launch3_r.JPG" width="250" height="200" style="text-align: center;;margin-top: 0px">
+<img src="b.gif" width="350" height="250">
 
 </body>
 </html>
